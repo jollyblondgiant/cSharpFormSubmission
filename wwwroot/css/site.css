@@ -1,0 +1,13 @@
+/*Write all of your CSS here*/
+form *{
+    display: block;
+}
+#errors{
+    display: inline-block;
+    background: pink;
+    border-radius: 15%;
+}
+#errors *{
+    display: block;
+    padding: 10px;
+}

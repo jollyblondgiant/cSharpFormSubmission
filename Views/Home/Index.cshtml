@@ -1,0 +1,42 @@
+@model FormSubmission.Models.RegViewForm
+<form asp-controller = "Home", asp-action = "Login", method = "POST">
+    
+
+    
+    
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName">
+
+
+    
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName">
+
+    
+        <label asp-for="Age"></label>
+        <input type="number" asp-for="Age">
+
+    
+        <label asp-for="Email"></label>
+        <input type="email" asp-for="Email">
+
+    
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password">
+
+    <button type= "submit">Submit</button>
+
+    <div id="errors">
+        <span asp-validation-for="FirstName"></span>
+        <span asp-validation-for="LastName"></span>
+        <span asp-validation-for="Age"></span>
+        <span asp-validation-for="Email"></span>
+        <span asp-validation-for="Password"></span>
+    </div>
+
+
+
+
+
+
+</form>
